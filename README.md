@@ -27,6 +27,28 @@ Destroying/Recycling Pooled Object:
 
 License
 =======================
-For any developers wanting to use "Advanced Pooling System" in their games, you are welcome to do so. You can use "Advanced Pooling System" in any and all games either modified or unmodified. It is expressly forbid to sell or commercially distribute "Advanced Pooling System" outside of your games. You can freely use it in as many games as you would like but you cannot commercially distribute the source code either directly or compiled into a library outside of your game.
+Copyright © 2014 Sumit Das (SwiftFinger Games)
 
-If you use "Advanced Pooling System" include a "Advanced Pooling System" logo on your about credits page, splash page or anywhere else your game might show up.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use
+or modify "Advanced Pooling System" in any and all games, subject to the
+following conditions:
+
+1. The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+2. Any product developed using "Advanced Pooling System" requires clearly
+readable "Advanced Pooling System" logo on splash screen or credits screen.
+
+3. It is expressly forbid to sell or commercially distribute "Advanced Pooling System"
+outside of your games. You can freely use it in your games but you cannot commercially
+distribute the source code either directly or compiled into a library outside of
+your game.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
