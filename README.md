@@ -16,8 +16,13 @@ Instantiating From Pool:
 
     PoolingSystem pS = PoolingSystem.Instance;
 
+    // To spawn the prefab as it is
     pS.InstantiateAPS("prefabName");
+     
+    // To spawn the prefab at a position and with a specific rotation
     pS.InstantiateAPS("prefabName", _position, _rotation); 
+     
+    // Same as above, also makes the spawned prefab a child of "parent" gameobject
     pS.InstantiateAPS("prefabName", _position, _rotation, parent);
 
 
