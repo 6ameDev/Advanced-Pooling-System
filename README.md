@@ -30,6 +30,27 @@ Destroying/Recycling Pooled Object:
 
     myPrefab.DestroyAPS();
 
+Using Sounds in APS:
+
+    void Start() {
+       PoolingSystem.Instance.InstantiateAPS("soundPrefab");
+    }
+    void Update() {
+       // Whenever you wish to play sound, call this function. Also works well with automatic weapon sounds.
+       soundPrefab.PlaySound();
+    }
+
+Using Particle Effects in APS:
+
+    void Start() {
+       PoolingSystem.Instance.InstantiateAPS("effectPrefab");
+    }
+    void Update() {
+       // Whenever you wish to play effect, call this function.
+       //Pass the amount of particles to be emitted, as the parameter. In this example we use 50.
+       effectPrefab.PlayEffect(50);
+    }
+
 License
 =======================
 Copyright © 2014 Sumit Das (SwiftFinger Games)
