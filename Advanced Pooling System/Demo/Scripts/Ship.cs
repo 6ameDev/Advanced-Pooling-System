@@ -9,8 +9,6 @@ public class Ship : MonoBehaviour {
 	private GameObject fireEffectL, fireEffectR;
 	private GameObject shootSoundL, shootSoundR;
 
-	public GameObject poolContainer;
-
 	public float fireDelay = 0.5f;
 	float timeToNextFire = 0;
 
@@ -49,8 +47,8 @@ public class Ship : MonoBehaviour {
 
 			GameObject bulletL, bulletR;
 
-			bulletL = poolingSystem.InstantiateAPS("Bullet", leftGunT.position, leftGunT.rotation, poolContainer);
-			bulletR = poolingSystem.InstantiateAPS("Bullet", rightGunT.position, rightGunT.rotation, poolContainer);
+			bulletL = poolingSystem.InstantiateAPS("Bullet", leftGunT.position, leftGunT.rotation);
+			bulletR = poolingSystem.InstantiateAPS("Bullet", rightGunT.position, rightGunT.rotation);
 
 			if(bulletL == null || bulletR == null)
 				return;
@@ -67,7 +65,13 @@ public class Ship : MonoBehaviour {
 	{
 		if(Input.GetButtonDown("Horizontal"))
 		{
-			float speed = Input.GetAxis("Horizontal") * 5;
+			float speed;
+
+			if(Input.GetAxis("Horizontal") > 0)
+				speed = 4;
+			else
+				speed = -4;
+
 			transform.rigidbody.velocity = (new Vector3(speed,0,0));
 		}
 	}

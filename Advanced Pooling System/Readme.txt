@@ -10,7 +10,10 @@ To use Advanced Pooling System in your project, do the following:
 3. Add a script named “PoolingSystem.cs” to this gameobject.
 
 A Get Started Guide can be found here:
-	http://swiftfingergames.blogspot.com
+	http://swiftfingergames.blogspot.com/2014/08/APSUnity3D.html
 
 For more information visit:
 	http://swiftfingergames.blogspot.com
+	
+For support, inbox us on our facebook page:
+	https://facebook.com/swiftfingergames

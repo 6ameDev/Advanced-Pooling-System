@@ -1,5 +1,5 @@
 ﻿//========================================================================================================================
-// Advanced Pooling System  - Copyright © 2014 Sumit Das (SwiftFinger Games)
+// Advanced Pooling System - Copyright © 2014 Sumit Das (SwiftFinger Games)
 //
 // Please direct any bugs/comments/suggestions to swiftfingergames@gmail.com
 //
@@ -11,7 +11,7 @@
 // 1. The above copyright notice and this permission notice shall be included
 // in all copies or substantial portions of the Software.
 //
-// 2. Any product developed using "Advanced Pooling System" requires clearly 
+// 2. Any product developed using "Advanced Pooling System" requires clearly
 // readable "Advanced Pooling System" logo on splash screen or credits screen.
 //
 // 3. It is expressly forbid to sell or commercially distribute
@@ -35,7 +35,7 @@ using System.Collections.Generic;
 [AddComponentMenu("AdvancedPoolingSystem/PoolingSystem")]
 
 /// <summary>
-/// <para>Version: 1.0.0</para>	 
+/// <para>Version: 1.0.1</para>	 
 /// <para>Author: Sumit Das (http://swiftfingergames.blogspot.com)</para>
 /// <para>Support: swiftfingergames@gmail.com </para>
 /// </summary>
@@ -88,6 +88,7 @@ public sealed class PoolingSystem : MonoBehaviour {
 				GameObject newItem = (GameObject) Instantiate(poolingItems[i].prefab);
 				newItem.SetActive(false);
 				pooledItems[i].Add(newItem);
+				newItem.transform.parent = transform;
 			}
 		}
 	}
@@ -161,6 +162,7 @@ public sealed class PoolingSystem : MonoBehaviour {
 					GameObject newItem = (GameObject) Instantiate(poolingItems[i].prefab);
 					newItem.SetActive(false);
 					pooledItems[i].Add(newItem);
+					newItem.transform.parent = transform;
 					return newItem;
 				}
 				

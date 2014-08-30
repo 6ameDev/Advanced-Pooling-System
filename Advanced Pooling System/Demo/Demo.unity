@@ -233,32 +233,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 654095574}
   m_GameObject: {fileID: 498425473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &510677511
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 510677512}
-  m_Layer: 0
-  m_Name: PoolContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &510677512
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 510677511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0373020023, y: -1.5625, z: 13.466403}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &614427687
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +372,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftGun: {fileID: 1909199772}
   rightGun: {fileID: 240477202}
-  poolContainer: {fileID: 510677511}
   fireDelay: .200000003
 --- !u!54 &621191679
 Rigidbody:
@@ -466,7 +439,7 @@ Prefab:
     - target: {fileID: 11400000, guid: a7bdd5c226fb92d4ca7b1212ca5597fe, type: 2}
       propertyPath: poolContainer
       value: 
-      objectReference: {fileID: 510677511}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7bdd5c226fb92d4ca7b1212ca5597fe, type: 2}
   m_RootGameObject: {fileID: 621191673}
