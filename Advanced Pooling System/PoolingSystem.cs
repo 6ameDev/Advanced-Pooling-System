@@ -101,29 +101,39 @@ public sealed class PoolingSystem : MonoBehaviour {
 	public GameObject InstantiateAPS (string itemType)
 	{
 		GameObject newObject = GetPooledItem(itemType);
-		newObject.SetActive(true);
-		return newObject;
+		if(newObject != null) {
+			newObject.SetActive(true);
+			return newObject;
+		}
+		Debug.Log("Warning: Pool is out of objects.\nTry enabling 'Pool Expand' option.");
+		return null;
 	}
 
 	public GameObject InstantiateAPS (string itemType, Vector3 itemPosition, Quaternion itemRotation)
 	{
 		GameObject newObject = GetPooledItem(itemType);
-		newObject.transform.position = itemPosition;
-		newObject.transform.rotation = itemRotation;
-		newObject.SetActive(true);
-		return newObject;
+		if(newObject != null) {
+			newObject.transform.position = itemPosition;
+			newObject.transform.rotation = itemRotation;
+			newObject.SetActive(true);
+			return newObject;
+		}
+		Debug.Log("Warning: Pool is out of objects.\nTry enabling 'Pool Expand' option.");
+		return null;
 	}
 
 	public GameObject InstantiateAPS (string itemType, Vector3 itemPosition, Quaternion itemRotation, GameObject myParent)
 	{
-		if(GetPooledItem(itemType) != null){
-			GameObject newObject = GetPooledItem(itemType);
+
+		GameObject newObject = GetPooledItem(itemType);
+		if(newObject != null) {
 			newObject.transform.position = itemPosition;
 			newObject.transform.rotation = itemRotation;
 			newObject.transform.parent = myParent.transform;
 			newObject.SetActive(true);
 			return newObject;
 		}
+		Debug.Log("Warning: Pool is out of objects.\nTry enabling 'Pool Expand' option.");
 		return null;
 	}
 
